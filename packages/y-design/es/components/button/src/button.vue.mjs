@@ -1,5 +1,5 @@
 import { defineComponent as s, computed as n, openBlock as m, createElementBlock as _, normalizeClass as b, unref as y, createElementVNode as k, renderSlot as C } from "vue";
-import "../theme/src/button.css";
+import "../../theme/src/button.css";
 import { buttonProps as h } from "./button.mjs";
 const B = ["disabled"], $ = { class: "y-button__inner" }, z = s({ name: "YButton" }), N = /* @__PURE__ */ s({
   ...z,

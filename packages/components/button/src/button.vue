@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import '../../../theme/src/button.scss'
+import '../../theme/src/button.scss'
 // @ts-ignore
 defineOptions({ name: 'YButton' })
 

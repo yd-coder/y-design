@@ -15,11 +15,11 @@ export const removeDist = () => {
 
 //打包样式
 export const buildStyle = () => {
-  return src(`${componentPath}/../theme/src/**.scss`)
+  return src(`${componentPath}/theme/src/**.scss`)
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(dest(`${pkgPath}/y-design/lib/theme/src`))
-    .pipe(dest(`${pkgPath}/y-design/es/theme/src`))
+    .pipe(dest(`${pkgPath}/y-design/lib/components/theme/src`))
+    .pipe(dest(`${pkgPath}/y-design/es/components/theme/src`))
 }
 
 //打包组件

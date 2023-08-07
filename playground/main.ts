@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import ydesign from '@ydesign/components'
+import y-design from '@y-design/components'
 
 const app = createApp(App)
-app.use(ydesign)
+app.use(y-design)
 
 app.mount('#app')

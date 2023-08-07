@@ -59,9 +59,11 @@ importers:
 
   packages/theme: {}
 
+  packages/y-design: {}
+
   playground:
     dependencies:
-      '@ydesign/components':
+      '@y-design/components':
         specifier: workspace:^
         version: link:../packages/components
 

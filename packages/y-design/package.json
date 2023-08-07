@@ -1,5 +1,5 @@
 {
-  "name": "ydesign",
+  "name": "y-design-ui",
   "version": "1.0.0",
   "main": "lib/components/index.js",
   "module": "es/components/index.mjs",
@@ -8,7 +8,7 @@
     "lib"
   ],
   "keywords": [
-    "ydesign",
+    "y-design-ui",
     "vue3组件库"
   ],
   "sideEffects": [

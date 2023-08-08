@@ -1,6 +1,6 @@
 {
   "name": "y-design-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/components/index.js",
   "module": "es/components/index.mjs",
   "files": [

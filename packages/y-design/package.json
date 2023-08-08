@@ -14,6 +14,9 @@
   "sideEffects": [
     "**/**/*.css"
   ],
+  "scripts": {
+    "release": "release-it"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yd-coder/y-design"

@@ -3,18 +3,14 @@ import nav from './nav'
 
 export default {
   base: '/y-design/',
-  title: 'Y-Design',
-  lang: 'en-US',
+  title: 'YDesign',
+  lang: 'zh-CN',
   description: '组件库',
-  head: [
-    ['link', { rel: 'icon', href: '/layer.png', type: 'image/png' }],
-    ['link', { rel: 'stylesheet', href: 'https://unpkg.com/nes.css/css/nes-core.min.css' }],
-  ],
+  head: [['link', { rel: 'icon', href: '/favicon.ico', type: 'image/ico' }]],
+  lastUpdated: true,
+  cleanUrls: true, //允许从URL中删除后面的“.html”，生成干净的目录结构
   themeConfig: {
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-present yd-coder',
-    },
+    logo: '/favicon.ico',
     search: {
       provider: 'local',
     },
@@ -32,6 +28,17 @@ export default {
         link: 'https://github.com/yd-coder/y-design',
       },
     ],
+    darkModeSwitchLabel: '外观',
+    returnToTopLabel: '返回顶部',
+    lastUpdatedText: '上次更新',
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇',
+    },
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-present yd-coder',
+    },
     nav,
     sidebar,
   },

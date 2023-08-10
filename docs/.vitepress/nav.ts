@@ -1,6 +1,6 @@
 export default [
   {
-    text: '指引',
+    text: '指南',
     link: '/guide/quickstart',
     activeMatch: '/guide/',
   },
@@ -9,25 +9,16 @@ export default [
     link: '/components/button',
     activeMatch: '/components/',
   },
-  // {
-  //   text: 'CSS',
-  //   link: '/styles/animation',
-  //   activeMatch: '/styles/',
-  // },
   {
     text: '相关链接',
     items: [
       {
-        text: 'vitejs',
-        link: 'https://vitejs.dev/',
-      },
-      {
-        text: 'vue3',
+        text: 'Vue3',
         link: 'https://vuejs.org/',
       },
       {
-        text: 'blog',
-        link: 'https://laine001.github.io/',
+        text: 'Vitejs',
+        link: 'https://vitejs.dev/',
       },
     ],
   },

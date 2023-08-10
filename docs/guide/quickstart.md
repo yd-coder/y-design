@@ -2,33 +2,39 @@
 
 ## 安装
 
-```bash
-npm install ikui
+::: code-group
+
+```bash [pnpm]
+pnpm add y-design-ui
 ```
+
+```bash [yarn]
+yarn add y-design-ui
+```
+
+```bash [npm]
+npm install y-design-ui
+```
+
+:::
 
 ## 引入
 
-```js{3,4,5}
+```js{4,5,6,8,9,10}
 import { createApp } from 'vue'
 import App from './app.vue'
 
-import ikui from 'ikuiv'
-import 'ikui/lib/index.css'
+// 全部引入
+import ydesign from 'y-design-ui'
+createApp(App).use(ydesign).mount('#app')
 
-createApp(App).use(ikui).mount('#app')
-
-// or
-
-import { IkButton } from 'ik-ui'
-app.use(IkButton)
+// 按需导入
+import { YButton } from 'y-design-ui'
+app.use(YButton)
 ```
 
 ## 使用
 
 ```html
-<ik-button>按 钮</ik-button>
+<Ybutton>按 钮</Ybutton>
 ```
-
-## 效果
-
-<ik-button>按 钮</ik-button>

@@ -2,7 +2,7 @@
 
 ## 主色
 
-整体色彩采用中国传统古色，取色来自 b 站`@设计师IORI`
+整体色彩采用中国传统古色，取色来自 b 站`@设计师IORI`，组件库灵感来自`@LAINE001/ikun-ui`
 
 其颜色分别作为`默认` `主题` `成功` `警告` `信息` `危险`这些行为的主色
 
@@ -71,7 +71,7 @@
 </div>
 
 <style lang="scss">
-  @import '../../packages/ikui-theme/mixins/config.scss';
+  @import '../../packages/components/theme/mixins/var.scss';
   .colors-list {
     display: flex;
   }
@@ -133,14 +133,6 @@
         transform: scale(.82);
       }
     }
-    /* .lighter {
-      height: 40px;
-      background-color: $button-lighter--primary;
-    }
-    .darker {
-      height: 40px;
-      background-color: $button-darker--primary;
-    } */
   }
   .red-colors-box {
     width: 120px;

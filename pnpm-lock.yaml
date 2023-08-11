@@ -64,8 +64,6 @@ importers:
         specifier: ^3.2.36
         version: registry.npmmirror.com/vue@3.2.36
 
-  docs: {}
-
   packages/components: {}
 
   packages/y-design: {}

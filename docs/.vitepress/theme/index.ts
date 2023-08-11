@@ -1,7 +1,9 @@
 import { h, watch } from 'vue'
 import { useData, EnhanceAppContext } from 'vitepress'
+import ydesign from 'y-design-ui'
 import DefaultTheme from 'vitepress/theme'
 
+// 引入修改VitePress主题样式
 import './styles/index.scss'
 
 let homePageStyle: HTMLStyleElement | undefined
@@ -20,7 +22,10 @@ export default {
 
     return h(DefaultTheme.Layout, props)
   },
-  enhanceApp({ router }: EnhanceAppContext) {
+  enhanceApp({ app, router }) {
+    // 注册ui组件
+    app.use(ydesign)
+
     if (typeof window !== 'undefined') {
       watch(
         () => router.route.data.relativePath,

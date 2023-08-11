@@ -6,22 +6,20 @@
 
 `type`设置按钮类型，`shape`属性为圆角按钮
 
-:::demo
+::: demo
 
 ```vue
 <template>
-  <ik-space wrap="wrap">
-    <ik-button>普通按钮</ik-button>
-    <ik-button type="primary">主要按钮</ik-button>
-    <ik-button type="success">成功按钮</ik-button>
-    <ik-button type="warning">警告按钮</ik-button>
-    <ik-button type="danger">危险按钮</ik-button>
-    <ik-button round>普通按钮</ik-button>
-    <ik-button type="primary" round>主要按钮</ik-button>
-    <ik-button type="success" round>成功按钮</ik-button>
-    <ik-button type="warning" round>警告按钮</ik-button>
-    <ik-button type="danger" round>危险按钮</ik-button>
-  </ik-space>
+  <YButton>普通按钮</YButton>
+  <YButton type="primary">主要按钮</YButton>
+  <YButton type="success">成功按钮</YButton>
+  <YButton type="warning">警告按钮</YButton>
+  <YButton type="danger">危险按钮</YButton>
+  <YButton round>普通按钮</YButton>
+  <YButton type="primary" round>主要按钮</YButton>
+  <YButton type="success" round>成功按钮</YButton>
+  <YButton type="warning" round>警告按钮</YButton>
+  <YButton type="danger" round>危险按钮</YButton>
 </template>
 ```
 
@@ -35,12 +33,10 @@
 
 ```vue
 <template>
-  <ik-space wrap="wrap">
-    <ik-button type="primary" plain>朴素按钮</ik-button>
-    <ik-button type="success" plain>朴素按钮</ik-button>
-    <ik-button type="warning" plain round>朴素按钮</ik-button>
-    <ik-button type="danger" plain round>朴素按钮</ik-button>
-  </ik-space>
+  <YButton type="primary" plain>朴素按钮</YButton>
+  <YButton type="success" plain>朴素按钮</YButton>
+  <YButton type="warning" plain round>朴素按钮</YButton>
+  <YButton type="danger" plain round>朴素按钮</YButton>
 </template>
 ```
 
@@ -54,13 +50,11 @@
 
 ```vue
 <template>
-  <ik-space wrap="wrap">
-    <ik-button disabled>普通按钮</ik-button>
-    <ik-button type="primary" disabled>主要按钮</ik-button>
-    <ik-button type="success" disabled>成功按钮</ik-button>
-    <ik-button type="warning" disabled>警告按钮</ik-button>
-    <ik-button type="danger" disabled>危险按钮</ik-button>
-  </ik-space>
+  <YButton disabled>普通按钮</YButton>
+  <YButton type="primary" disabled>主要按钮</YButton>
+  <YButton type="success" disabled>成功按钮</YButton>
+  <YButton type="warning" disabled>警告按钮</YButton>
+  <YButton type="danger" disabled>危险按钮</YButton>
 </template>
 ```
 
@@ -74,17 +68,15 @@
 
 ```vue
 <template>
-  <ik-space>
-    <ik-button icon="add">按钮</ik-button>
-    <ik-button>
-      <ik-icon name="user" />
-      按钮
-    </ik-button>
-    <ik-button>
-      按钮
-      <ik-icon name="main" />
-    </ik-button>
-  </ik-space>
+  <YButton icon="add">按钮</YButton>
+  <YButton>
+    <ik-icon name="user" />
+    按钮
+  </YButton>
+  <YButton>
+    按钮
+    <ik-icon name="main" />
+  </YButton>
 </template>
 ```
 
@@ -98,16 +90,16 @@
 
 ```vue
 <template>
-  <ik-button size="small">普通按钮</ik-button>
-  <ik-button type="primary" size="small">主要按钮</ik-button>
+  <YButton size="small">普通按钮</YButton>
+  <YButton type="primary" size="small">主要按钮</YButton>
   <br />
   <br />
-  <ik-button>普通按钮</ik-button>
-  <ik-button type="primary">主要按钮</ik-button>
+  <YButton>普通按钮</YButton>
+  <YButton type="primary">主要按钮</YButton>
   <br />
   <br />
-  <ik-button size="large">普通按钮</ik-button>
-  <ik-button type="primary" size="large">主要按钮</ik-button>
+  <YButton size="large">普通按钮</YButton>
+  <YButton type="primary" size="large">主要按钮</YButton>
 </template>
 ```
 
@@ -119,10 +111,8 @@
 
 ```vue
 <template>
-  <ik-space>
-    <ik-button loading>加载中</ik-button>
-    <ik-button type="primary" loading>请稍后</ik-button>
-  </ik-space>
+  <YButton loading>加载中</YButton>
+  <YButton type="primary" loading>请稍后</YButton>
 </template>
 ```
 
@@ -143,11 +133,3 @@
 | 参数  |    说明    |     返回参数      | 默认值 |
 | ----- | :--------: | :---------------: | -----: |
 | click | click 事件 | `(): Event => {}` |      - |
-
-<style lang="scss">
-  .flex {
-    .ik-button {
-      margin-right: 12px;
-    }
-  }
-</style>

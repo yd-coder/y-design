@@ -7,26 +7,28 @@ on:
     branches: ['main']
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 16
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
 
       - name: Build
-        run: npm run build
+        run: pnpm docs:build
+        env:
+          DOC_ENV: preview
+          NODE_OPTIONS: --max-old-space-size=4096
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

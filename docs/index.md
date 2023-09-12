@@ -27,7 +27,7 @@ features:
     title: Beauty
     details: 主题切换
   - icon: 🛠️
-    title: Stict
+    title: Strict
     details: 基于TypeScript开发
   - icon: ⚡️
     title: Quick
